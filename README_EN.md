@@ -65,7 +65,7 @@ You are forbidden to do the following:
 
 ## Special Thanks
 
-- [羽舲 Hanekmio](https://github.com/Hanekmio)
+- [伊落星涟 ArcHosheri](https://github.com/ArcHosheri)
 - [baguchan](https://github.com/baguchi)
 - [沐辰 TimeBather](https://github.com/TimeBather/)
 - [瑞雪真冬 Mafuyu404](https://github.com/Mafuyu404)
