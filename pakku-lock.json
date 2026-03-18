@@ -4490,20 +4490,23 @@
             ]
         },
         {
-            "pakku_id": "Z3Zv03sk5N3Pi2Y4",
+            "pakku_id": "ZQC7iEJQVhDIVXHj",
             "pakku_links": [
                 "RxcfHp3l3Wyn2SNg"
             ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
-                "modrinth": "create-halitosis"
+                "modrinth": "create-halitosis",
+                "curseforge": "create-halitosis-create-halitosis"
             },
             "name": {
-                "modrinth": "Create: Halitosis"
+                "modrinth": "Create: Halitosis",
+                "curseforge": "Create: Halitosis Create: Halitosis"
             },
             "id": {
-                "modrinth": "MOgR2kut"
+                "modrinth": "MOgR2kut",
+                "curseforge": "1095941"
             },
             "files": [
                 {
@@ -4531,6 +4534,34 @@
                     "required_dependencies": [],
                     "size": 158212,
                     "date_published": "2026-02-23T15:05:41.888220Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "createhalitosis-1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.1",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7668/12/createhalitosis-1.0.2.jar",
+                    "id": "7668012",
+                    "parent_id": "1095941",
+                    "hashes": {
+                        "sha1": "1fde47cf32b89239c77cf336e9a87fc7f8fa8999",
+                        "md5": "3f4c1e95aa7affd978458cef716845f8"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 158212,
+                    "date_published": "2026-02-23T15:08:14.437Z"
                 }
             ]
         },
