@@ -11262,7 +11262,44 @@
             ]
         },
         {
-            "pakku_id": "0QeMhl7d6DyY1QLW",
+            "pakku_id": "BrwoZ4FPseMIbpPL",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "mandalas-gui-dark-mode"
+            },
+            "name": {
+                "curseforge": "Mandala's GUI - Dark mode"
+            },
+            "id": {
+                "curseforge": "664719"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MandalasGUI+Modded_Dakmode_v4.6.zip",
+                    "mc_versions": [
+                        "1.20.2-Snapshot",
+                        "1.20.1",
+                        "1.20",
+                        "1.20-Snapshot"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4755/519/MandalasGUI+Modded_Dakmode_v4.6.zip",
+                    "id": "4755519",
+                    "parent_id": "664719",
+                    "hashes": {
+                        "sha1": "d122f786d317f72f8fe6ea80b2f0e3a82adafbb2",
+                        "md5": "a2b5296091e5fda45354e7a2f7bd3617"
+                    },
+                    "required_dependencies": [],
+                    "size": 1067861,
+                    "date_published": "2023-09-17T00:56:05.323Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "8yDY4Hnn25HDAXYH",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
             "slug": {
@@ -11280,25 +11317,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Mandalas GUI - Dark Mode KOTS Compat 2.6.zip",
+                    "file_name": "Mandalas GUI - Dark Mode KOTS Compat 2.7.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7609/568/Mandalas GUI - Dark Mode KOTS Compat 2.6.zip",
-                    "id": "7609568",
+                    "url": "https://edge.forgecdn.net/files/7775/129/Mandalas GUI - Dark Mode KOTS Compat 2.7.zip",
+                    "id": "7775129",
                     "parent_id": "1452633",
                     "hashes": {
-                        "sha1": "f39a2934963c8d9d946f6a61d78911043ecb8ff6",
-                        "md5": "984b4cf743942732024476fea2ccdba9"
+                        "sha1": "945f2554fa9a976ce50c3d1a9bfc7acf450d7599",
+                        "md5": "3cc266b2750711e6a3da36cd9860ecea"
                     },
                     "required_dependencies": [],
-                    "size": 1388120,
-                    "date_published": "2026-02-11T14:27:38.890Z"
+                    "size": 1512791,
+                    "date_published": "2026-03-18T07:36:52.280Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "Mandalas GUI - Dark Mode KOTS Compat 2.6.zip",
+                    "file_name": "Mandalas GUI - Dark Mode KOTS Compat 2.7.zip",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -11307,16 +11344,16 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V32Z1JXp/versions/3H2ZKtXu/Mandalas GUI - Dark Mode KOTS Compat 2.6.zip",
-                    "id": "3H2ZKtXu",
+                    "url": "https://cdn.modrinth.com/data/V32Z1JXp/versions/t4L6BkzC/Mandalas GUI - Dark Mode KOTS Compat 2.7.zip",
+                    "id": "t4L6BkzC",
                     "parent_id": "V32Z1JXp",
                     "hashes": {
-                        "sha512": "a69f1070d86fb35b75b5156db92512e9c8eee2d6b30dfc63ca92370a919e66e9aa4dbac521e8e81a92100379deac6f668b2a9314c42ecc9a3e7623943e69871c",
-                        "sha1": "f39a2934963c8d9d946f6a61d78911043ecb8ff6"
+                        "sha512": "7b5eea9a098826a8076274f910dda5945a0b083454f78eb031000ede37cd85a6e990620d4107cede10c69b122500c681363199f243e394fe299894f4eab4b02f",
+                        "sha1": "945f2554fa9a976ce50c3d1a9bfc7acf450d7599"
                     },
                     "required_dependencies": [],
-                    "size": 1388120,
-                    "date_published": "2026-02-11T14:28:14.131058Z"
+                    "size": 1512791,
+                    "date_published": "2026-03-18T07:44:59.703394Z"
                 }
             ]
         },
