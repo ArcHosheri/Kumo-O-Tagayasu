@@ -29,6 +29,10 @@
 
 </div>
 
+> [!IMPORTANT]
+> 这个项目不再积极开发，仅接受 Pull Requests 和 Bug 修复。
+> Currently this project is not actively developping, only recives PRs and bug fixes.
+
 ## 简介 Introduction
 
 Kumo O Tagayasu 耕云钓月是一个注重田园体验的综合整合包，补全了大部分材料的量产，旨在给予玩家一个休闲惬意的游戏体验。

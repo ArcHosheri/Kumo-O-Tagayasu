@@ -29,6 +29,10 @@
 
 </div>
 
+> [!IMPORTANT]
+> 这个项目不再积极开发，仅接受 Pull Requests 和 Bug 修复。
+> Currently this project is not actively developping, only recives PRs and bug fixes.
+
 ## Introduction
 
 Born for server, Kumo O Tagayasu is a comprehensive modpack that fills in the missing materials, intended to give players a relaxing and enjoyable game experience.
