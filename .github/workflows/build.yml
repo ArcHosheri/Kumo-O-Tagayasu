@@ -35,6 +35,46 @@ jobs:
           base_dir: ".pakku"
           exclude_file: "exclude.txt"
 
+  create-tag-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check if tag exists
+        id: check_tag
+        run: |
+          if git rev-parse -q --verify "refs/tags/build" >/dev/null; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create tag if missing
+        if: steps.check_tag.outputs.exists == 'false'
+        run: |
+          git tag build
+          git push origin build
+
+      - name: Check if release exists
+        id: check_release
+        run: |
+          release=$(gh release view build --json tagName -q .tagName || echo "none")
+          if [ "$release" = "build" ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create release if missing
+        if: steps.check_release.outputs.exists == 'false'
+        run: |
+          gh release create build --title "Build Release" --notes "Automated release for build tag"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build-release-and-test:
     runs-on: ubuntu-latest
     steps:
@@ -48,17 +88,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build Client
-        run: |
-          # cd .pakku/client-overrides/BiliBiliMediaFiles
-
-          # wget https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.0-latest-win64-lgpl-8.0.zip >/dev/null 2>&1
-          # unzip ffmpeg-n8.0-latest-win64-lgpl-8.0.zip >/dev/null 2>&1
-          # mv ffmpeg-n8.0-latest-win64-lgpl-8.0/bin/ffmpeg.exe .
-          # rm -f ffmpeg-n8.0-latest-win64-lgpl-8.0.zip
-          # rm -rf ffmpeg-n8.0-latest-win64-lgpl-8.0
-
-          # cd ../../../
-          
+        run: |          
           wget https://github.com/juraj-hrivnak/Pakku/releases/download/v1.3.2/pakku.jar >/dev/null 2>&1
           chmod 755 pakku.jar
           java -jar pakku.jar export
@@ -83,7 +113,6 @@ jobs:
         with:
           tag_name: "build"
           files: |
-            KumoOTagayasu-build.mrpack
             KumoOTagayasu-build.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
