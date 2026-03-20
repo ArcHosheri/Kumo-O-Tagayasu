@@ -31,7 +31,6 @@
 
 > [!IMPORTANT]
 > 这个项目不再积极开发，仅接受 Pull Requests 和 Bug 修复。
-> Currently this project is not actively developping, only recives PRs and bug fixes.
 
 ## 简介 Introduction
 
